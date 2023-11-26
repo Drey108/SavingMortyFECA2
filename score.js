@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { text: "WUBBA LUBBA DUB DUB!!", audio: "./assets/WLDD.mp3" },
         { text: "And that's the wayyyyyy the news goes!", audio: "./assets/newsgoes.mp3" },
         { text: "And that's why I always say, 'Shumshumschilpiddydah!", audio: "./assets/shum.mp3" },
-        { text: "You Act Like Prey, But You're A Predator", audio: "./assets/prey.mp3" },
+        { text: "You Act Like Prey, But You're A Predator", audio: "./assets/preyeditted.mp3" },
         { text: "Charging Into 'Em Like A Bull — That's How We Grow As People.", audio: "./assets/motivation.mp3" }
     ];
 
