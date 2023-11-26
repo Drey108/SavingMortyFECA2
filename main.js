@@ -119,7 +119,7 @@ function updateScore() {
         healthBar.style.width = `${health}%`;
     }
     if (health <= 0) {
-        window.location.href = `gameOver.html?score=${score}`;
+        window.location.href = `gameover.html?score=${score}`;
     }
 }
 
