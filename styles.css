@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+*{
+    font-family: 'Architects Daughter', cursive;
+}
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/bgult.png'); 
+    background-size: cover;
+    background-color: #000;
+    z-index: -1; 
+}
+
+.home-container {
+    position: absolute;
+    top: 420px;
+    left: 766px;
+    width: 890px;
+    height: 620px;
+    transform: translate(-50%, -50%);
+    border: 0px solid #000000; 
+    background-image: url("./assets/homepage.jpg");
+    background-size: cover;
+
+}
+
+#start{
+    position: absolute;
+    height: 40px;
+    width: 110px;
+    bottom: 125px;
+    left: 741px;
+    cursor: pointer;
+}
+
+#namespace{
+    position: absolute;
+    height: 100px;
+    top: 320px;
+    left: 558px;
+}
+input::placeholder{
+    color: black ;
+    font-size: 14px;
+}
+
+#UN{
+    position: absolute;
+    background-color: #00000000;
+    border-color: #ffffff00;
+    outline: none;
+    top:325px;
+    left: 560px;
+    width: 285px;
+
+}
+#NN{
+    position: absolute;
+    background-color: #00000000;
+    border-color: #00000000;
+    outline: none;
+    top: 392px;
+    left: 561px;
+    width: 283px;
+}
+#howto{
+    position: absolute;
+    top: 110px;
+    left: 14px;
+    height: 20px;
+    width: auto;
+    
+}
+
+
+/* infopopup */
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  .modalbtn{
+    position: absolute;
+    top: 235px;
+    left: 330px;
+    z-index: 12;
+    background-color: #00000000;
+    border: #000000;
+    height: 20px;
+    width: auto;
+    cursor: pointer;
+  }
+
+  .modalbtn,img{
+    height: 20px;
+    width: auto;
+  }
+
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid #ADD2E9;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.866);
+    width: 500px;
+    max-width: 80%;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+  
+  .modal-header .title {
+    position:relative;
+    left: 160px;
+    top: 10px;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .modal-body .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ADD2E9;
+  }
+  
+  .modal-body {
+    padding: 10px 15px;
+  
+
+  }
+
+  .modal-body,p{
+    color: white;
+    text-align: center;
+  }
+
+#mouse{
+    position:relative;
+    height: 150px;
+    left: 12px;
+}
+  
+#overlay{
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+  }
+
+
+/* gamepage */
+
+.game-container {
+    position: absolute;
+    top: 420px;
+    left: 766px;
+    width: 890px;
+    height: 620px;
+    transform: translate(-50%, -50%);
+    border: 0px solid #000000; 
+    background-image: url("./assets/galaxy.jpg");
+    background-size: cover;
+
+}
+
+#score{
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  color: white; 
+  font-size: 20px;
+}
+
+#container{
+  position: absolute;
+  width: 880px;
+  height: 630px;
+  overflow: hidden;
+  z-index: 12;
+  color: #ADD2E9;
+}
+
+#hud{
+  position: absolute;
+  width: 890px;
+  height: 620px;
+  z-index: 10;
+  background-image: url("./assets/mainbgpng.png");
+}
+
+#health-bar-container {
+  width: 250px;
+  height: 20px;
+  border: 0.5px solid #000;
+  margin-top: 10px; 
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+#health-bar {
+  height: 100%;
+  background-color: rgb(162, 255, 0);
+  transition: width 0.3s ease-in-out;
+  border-radius: 20px;
+}
+
+
+/* gameover */
+.GOcontainer{
+    position: absolute;
+    top: 420px;
+    left: 764px;
+    width: 890px;
+    height: 620px;
+    transform: translate(-50%, -50%);
+    border: 0px solid #000000; 
+    background-image: url("./assets/gameoverwhole\ 1.png");
+    background-size: cover;
+
+
+
+}
+
+
+#finalscore{
+    font-size: 15vh;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0px;
+}
+
+#GO{
+  text-align: center;
+  color: #ffffff;
+  font-size: 7vh;
+  margin: 0px;
+  margin-top:90px;
+}
+
+#scorephrase{
+  font-size:2vh;
+  font-weight:lighter;
+}
+
+.pa{
+  position: relative;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000000;
+  left:270px;
+  bottom: -113px;
+}
+.pa:hover{
+  color: rgb(165, 91, 0) ;
+  }
+.gth
+{
+  position: relative;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000000;
+  left:435px;
+  bottom: -113px;
+}
+.gth:hover{
+  color:  rgb(165, 91, 0);
+}
+  
+

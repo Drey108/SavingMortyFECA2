@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Saving morty</title>
+</head>
+<body>
+  <audio autoplay><source src="./assets/intro-4k-60fps.mp3"></audio>
+  <button class="modalbtn" data-modal-target="#modal"><img src="./assets/howtoplay.png" alt=""></button>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">How To Play</div>
+        
+      </div>
+      <div class="modal-body">
+        <p >Use mouse and click on the cats <br> and score above 30 to save morty</p> <br> <img id="mouse" src="./assets/mouse.png" alt=""> <br> <br>
+        <button data-close-button class="close-button">OK</button>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    <div class="background"></div>
+        <section> 
+            <div class="home-container">
+                <img src="./assets/start.png" alt="Start" id="start">
+                <img src="./assets/nameplace.png" alt="namespace" id="namespace">
+                <input type="text" id="NN"  name="Nick Name" placeholder="Nick Name:" required>
+                <input type="text" id="UN" name="User Name" placeholder="User Name:" required>
+            </div>    
+        </section>          
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
